@@ -14,7 +14,7 @@ if __name__ == '__main__':
       raise Exception
 
   except Exception:
-    print('Data is missing one of the arguments. N, M or matrix data.')
+    print('\nData is missing one of the arguments. N, M or matrix data.\n')
     sys.exit(0)
 
   N = int(read_data[0])

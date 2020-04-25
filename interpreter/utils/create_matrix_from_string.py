@@ -9,8 +9,8 @@ def create_matrix_from_string(rows, cols, str):
 
   except Exception:
     print(
-      'There is not enough data for the matrix, or they are in abundance.' +
-      ' ' + 'Should be %s, got %s.'%(rows * cols, len(matrix_data))
+      '\nThere is not enough data for the matrix, or they are in abundance.' +
+      ' ' + 'Should be %s, got %s.\n'%(rows * cols, len(matrix_data))
     )
     sys.exit(0)
 
