@@ -20,4 +20,3 @@ if __name__ == '__main__':
   N = int(read_data[0])
   M = int(read_data[1])
   matrix_data = read_data[2]
-  print(create_matrix_from_string(N, M, matrix_data))
