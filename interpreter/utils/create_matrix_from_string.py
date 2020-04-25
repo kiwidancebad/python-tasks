@@ -1,15 +1,18 @@
+import sys
+
 def create_matrix_from_string(rows, cols, str):
   matrix_data = str.split(';')
 
   try:
     if ((rows * cols) != len(matrix_data)):
-      raise Exception('')
+      raise Exception()
 
   except Exception:
     print(
       'There is not enough data for the matrix, or they are in abundance.' +
       ' ' + 'Should be %s, got %s.'%(rows * cols, len(matrix_data))
     )
+    sys.exit(0)
 
   matrix = [[0 for i in range(rows)] for j in range(cols)]
   
