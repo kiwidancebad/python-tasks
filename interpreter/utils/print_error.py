@@ -3,4 +3,4 @@ def print_error(message):
     print('Print error error! Message must be a string.')
     return
 
-  print('\n%s\n'%(message))
+  print('\nERROR! Message: %s\n'%(message))
