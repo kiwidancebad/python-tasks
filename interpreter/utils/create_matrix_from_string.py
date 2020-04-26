@@ -1,11 +1,20 @@
 import sys
 
 def create_matrix_from_string(rows, cols, str):
-  matrix_data = str.split(';')
-
   try:
+    matrix_data = str.split(';')
+
     if ((rows * cols) != len(matrix_data)):
-      raise Exception()
+      raise Exception
+
+    matrix = [[0 for i in range(rows)] for j in range(cols)]
+    
+    for i in range(rows):
+      for j in range(cols):
+        matrix[i][j] = matrix_data[0]
+        matrix_data.pop(0)
+
+    return matrix
 
   except Exception:
     print(
@@ -13,12 +22,3 @@ def create_matrix_from_string(rows, cols, str):
       ' ' + 'Should be %s, got %s.\n'%(rows * cols, len(matrix_data))
     )
     sys.exit(0)
-
-  matrix = [[0 for i in range(rows)] for j in range(cols)]
-  
-  for i in range(rows):
-    for j in range(cols):
-      matrix[i][j] = matrix_data[0]
-      matrix_data.pop(0)
-
-  return matrix
