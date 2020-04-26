@@ -3,6 +3,8 @@ import sys
 from utils.file_system.read_from_file import read_from_file
 from utils.file_system.write_to_file import write_to_file
 
+from utils.print_error import print_error
+
 from utils.create_matrix_from_string import create_matrix_from_string
 
 if __name__ == '__main__':
@@ -18,5 +20,5 @@ if __name__ == '__main__':
     matrix_data = read_data[2]
 
   except Exception:
-    print('\nData is missing one of the arguments. N, M or matrix data.\n')
+    print_error('Data is missing one of the arguments. N, M or matrix data.')
     sys.exit(0)

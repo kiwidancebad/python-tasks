@@ -1,5 +1,7 @@
 import sys
 
+from print_error import print_error
+
 def create_matrix_from_string(rows, cols, str):
   try:
     matrix_data = str.split(';')
@@ -17,8 +19,8 @@ def create_matrix_from_string(rows, cols, str):
     return matrix
 
   except Exception:
-    print(
-      '\nThere is not enough data for the matrix, or they are in abundance.' +
-      ' ' + 'Should be %s, got %s.\n'%(rows * cols, len(matrix_data))
+    print_error(
+      'There is not enough data for the matrix, or they are in abundance.' +
+      ' ' + 'Should be %s, got %s.'%(rows * cols, len(matrix_data))
     )
     sys.exit(0)
