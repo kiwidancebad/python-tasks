@@ -22,4 +22,4 @@ testArr = [
 ]
 
 for item in testArr:
-  print("Euler's totient function for %s: "%(item) + str(phi(item)))
+  print("\nEuler's totient function for %s: "%(item) + str(phi(item)))
