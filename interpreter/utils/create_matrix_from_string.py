@@ -1,6 +1,6 @@
 import sys
 
-from print_error import print_error
+from .print_error import print_error
 
 def create_matrix_from_string(rows, cols, str):
   try:

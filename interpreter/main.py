@@ -1,11 +1,11 @@
 import sys
 
-from utils.file_system.read_from_file import read_from_file
 from utils.file_system.write_to_file import write_to_file
-
-from utils.print_error import print_error
+from utils.file_system.read_from_file import read_from_file
 
 from utils.create_matrix_from_string import create_matrix_from_string
+
+from utils.print_error import print_error
 
 if __name__ == '__main__':
   try:
